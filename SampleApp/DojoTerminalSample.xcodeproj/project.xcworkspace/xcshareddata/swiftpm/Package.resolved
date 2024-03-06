@@ -1,0 +1,15 @@
+{
+  "originHash" : "b7c785e1b56e9f2b1d6fbeb16bf6266e2d96361a68d2994974a802e10bcb38bd",
+  "pins" : [
+    {
+      "identity" : "dojo-tap-to-pay-on-iphone-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dojo-engineering/dojo-tap-to-pay-on-iphone-sdk",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f85ca2b21bddc422fd460f406fb10d16832c7156"
+      }
+    }
+  ],
+  "version" : 3
+}
