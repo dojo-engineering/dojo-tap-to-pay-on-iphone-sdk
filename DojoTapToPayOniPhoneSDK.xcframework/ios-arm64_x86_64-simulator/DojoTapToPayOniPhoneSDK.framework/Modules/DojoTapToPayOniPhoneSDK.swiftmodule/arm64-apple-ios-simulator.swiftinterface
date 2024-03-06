@@ -1,0 +1,80 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DojoTapToPayOniPhoneSDK
+import Combine
+@_exported import DojoTapToPayOniPhoneSDK
+import Foundation
+import ProximityReader
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
+  case pending
+  case provisioning
+  case provisioned
+  case operational
+  case failed
+  case unknown
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 16.4, *)
+public class DojoTapToPayOniPhone {
+  public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func activateTerminal(_ activationKey: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func deactiveTerminal() async
+  #endif
+  @objc deinit
+}
+public enum DojoSDKResponseCode : Swift.Int {
+  case urlCompositionError
+  case decodingError
+  case activationKeyNotProvided
+  case sessionExpired
+  case orderIdMissing
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct Amount : Swift.Hashable {
+  public init(value: Foundation.Decimal, currencyCode: Swift.String)
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: DojoTapToPayOniPhoneSDK.Amount, b: DojoTapToPayOniPhoneSDK.Amount) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum APIEnv : Swift.String {
+  case staging
+  case prod
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Equatable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Hashable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.RawRepresentable {}
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Equatable {}
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Hashable {}
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.RawRepresentable {}
