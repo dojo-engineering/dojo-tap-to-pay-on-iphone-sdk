@@ -10,7 +10,7 @@ struct ContentView: View {
     @State private var terminalStatus: DojoTerminalStatus?
     @State private var errorText: String = ""
     
-    let secret = "ts_prod_K2r_r1ewHS9MwlxiLx9G1x2LoiScy_Kfy4hXPAZyIxDfNpAV2SPGzZopCP4s8cRjY2xY1TrOVEEHI990ugizzdpcPat_fpP2UBEUctFpsH4" // refer to our documentation
+    let secret = "secret" // refer to our documentation
     let paymentIntentId = "payment-intent-id" // https://docs.dojo.tech/payments/api#tag/Payment-intents/operation/PaymentIntents_CreatePaymentIntent
     
     var body: some View {
