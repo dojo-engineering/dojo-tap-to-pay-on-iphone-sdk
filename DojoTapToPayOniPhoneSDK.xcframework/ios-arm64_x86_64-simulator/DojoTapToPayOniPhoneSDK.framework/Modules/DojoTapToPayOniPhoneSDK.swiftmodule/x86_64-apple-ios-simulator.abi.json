@@ -400,6 +400,20 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "DojoTapToPayOniPhoneSDK",
         "declAttributes": [
           "RawDocComment"
@@ -970,9 +984,26 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "DojoTapToPayOniPhoneSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KeychainAccess",
+        "printedName": "KeychainAccess",
+        "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK",
+        "declAttributes": [
+          "ImplementationOnly"
         ]
       },
       {
@@ -1368,16 +1399,142 @@
     {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/DojoTerminalPaymentService.swift",
       "kind": "StringLiteral",
-      "offset": 5721,
+      "offset": 5913,
       "length": 13,
       "value": "\"location-id\""
     },
     {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/DojoTerminalPaymentService.swift",
       "kind": "StringLiteral",
-      "offset": 5721,
+      "offset": 5913,
       "length": 13,
       "value": "\"location-id\""
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 262,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 262,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 125,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 148,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 205,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 262,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/CompleteTransaction.swift",
+      "kind": "IntegerLiteral",
+      "offset": 342,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
@@ -1513,6 +1670,34 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TerminalDecline.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 18,
+      "value": "\"transaction_type\""
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TerminalDecline.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 13,
+      "value": "\"reason_code\""
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TerminalDecline.swift",
+      "kind": "StringLiteral",
+      "offset": 207,
+      "length": 18,
+      "value": "\"transaction_type\""
+    },
+    {
+      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TerminalDecline.swift",
+      "kind": "StringLiteral",
+      "offset": 248,
+      "length": 13,
+      "value": "\"reason_code\""
+    },
+    {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/OrderIdProvider.swift",
       "kind": "StringLiteral",
       "offset": 190,
@@ -1590,160 +1775,6 @@
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 617,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 640,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 697,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 617,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 640,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 697,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 617,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 640,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 697,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 754,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "IntegerLiteral",
-      "offset": 834,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 18,
-      "value": "\"transaction_type\""
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
-      "length": 13,
-      "value": "\"reason_code\""
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
-      "offset": 1486,
-      "length": 18,
-      "value": "\"transaction_type\""
-    },
-    {
-      "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
-      "offset": 1527,
-      "length": 13,
-      "value": "\"reason_code\""
-    },
-    {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/NetworkingService.swift",
       "kind": "IntegerLiteral",
       "offset": 593,
@@ -1774,7 +1805,7 @@
     {
       "filePath": "\/Users\/deniss.kaibagarovs\/Documents\/git\/dojo-ios-terminal-sdk\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/KeychainHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1538,
+      "offset": 1529,
       "length": 37,
       "value": "\"KEYCHAIN_ACTIVATION_STATUS_KEY-DOJO\""
     },
