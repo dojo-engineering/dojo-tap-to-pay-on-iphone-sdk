@@ -76,7 +76,7 @@ struct ContentView: View {
                 Task {
                     do {
                         /// (5) take payments
-                        try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
+                        let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
                     } catch {
                         showError(error)
                     }

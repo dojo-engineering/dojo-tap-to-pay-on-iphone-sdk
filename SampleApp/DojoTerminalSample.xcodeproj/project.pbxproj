@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		272EFDDF2B979028002CA1B6 /* DojoTapToPayOniPhoneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 272EFDDE2B979028002CA1B6 /* DojoTapToPayOniPhoneSDK */; };
 		274C2A8F2B992E7A00BD2169 /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C2A8E2B992E7A00BD2169 /* DeviceHelper.swift */; };
-		277D77862BAC80C600CCBE8C /* DojoTapToPayOniPhoneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 277D77852BAC80C600CCBE8C /* DojoTapToPayOniPhoneSDK */; };
+		27BDAC432BF37C1B00141F7A /* DojoTapToPayOniPhoneSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 27BDAC422BF37C1B00141F7A /* DojoTapToPayOniPhoneSDK */; };
 		27D5A4452B31B8B300963D4C /* DojoTerminalSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D5A4442B31B8B300963D4C /* DojoTerminalSampleApp.swift */; };
 		27D5A4472B31B8B300963D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D5A4462B31B8B300963D4C /* ContentView.swift */; };
 		27D5A4492B31B8B500963D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D5A4482B31B8B500963D4C /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272EFDDF2B979028002CA1B6 /* DojoTapToPayOniPhoneSDK in Frameworks */,
-				277D77862BAC80C600CCBE8C /* DojoTapToPayOniPhoneSDK in Frameworks */,
+				27BDAC432BF37C1B00141F7A /* DojoTapToPayOniPhoneSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 			name = DojoTerminalSample;
 			packageProductDependencies = (
 				272EFDDE2B979028002CA1B6 /* DojoTapToPayOniPhoneSDK */,
-				277D77852BAC80C600CCBE8C /* DojoTapToPayOniPhoneSDK */,
+				27BDAC422BF37C1B00141F7A /* DojoTapToPayOniPhoneSDK */,
 			);
 			productName = DojoTerminalSample;
 			productReference = 27D5A4412B31B8B300963D4C /* DojoTerminalSample.app */;
@@ -127,7 +127,7 @@
 			);
 			mainGroup = 27D5A4382B31B8B300963D4C;
 			packageReferences = (
-				277D77842BAC80C600CCBE8C /* XCRemoteSwiftPackageReference "dojo-tap-to-pay-on-iphone-sdk" */,
+				27BDAC412BF37C1B00141F7A /* XCLocalSwiftPackageReference "../../dojo-tap-to-pay-experiment" */,
 			);
 			productRefGroup = 27D5A4422B31B8B300963D4C /* Products */;
 			projectDirPath = "";
@@ -386,25 +386,20 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		277D77842BAC80C600CCBE8C /* XCRemoteSwiftPackageReference "dojo-tap-to-pay-on-iphone-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/dojo-engineering/dojo-tap-to-pay-on-iphone-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.2;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		27BDAC412BF37C1B00141F7A /* XCLocalSwiftPackageReference "../../dojo-tap-to-pay-experiment" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../dojo-tap-to-pay-experiment";
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		272EFDDE2B979028002CA1B6 /* DojoTapToPayOniPhoneSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DojoTapToPayOniPhoneSDK;
 		};
-		277D77852BAC80C600CCBE8C /* DojoTapToPayOniPhoneSDK */ = {
+		27BDAC422BF37C1B00141F7A /* DojoTapToPayOniPhoneSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 277D77842BAC80C600CCBE8C /* XCRemoteSwiftPackageReference "dojo-tap-to-pay-on-iphone-sdk" */;
 			productName = DojoTapToPayOniPhoneSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

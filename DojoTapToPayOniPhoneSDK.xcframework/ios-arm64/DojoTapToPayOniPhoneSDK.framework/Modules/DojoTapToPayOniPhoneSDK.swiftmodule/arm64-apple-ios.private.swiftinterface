@@ -24,13 +24,23 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   }
 }
 @available(iOS 16.4, *)
+public enum DojoTapToPayOniPhonePaymentResult : Swift.Int {
+  case success
+  case decline
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 16.4, *)
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
   #if compiler(>=5.3) && $AsyncAwait
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws
+  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func activateTerminal(_ activationKey: Swift.String) async throws
@@ -72,6 +82,12 @@ public enum APIEnv : Swift.String {
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
+@available(iOS 16.4, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Equatable {}
+@available(iOS 16.4, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Hashable {}
+@available(iOS 16.4, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.RawRepresentable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.RawRepresentable {}
