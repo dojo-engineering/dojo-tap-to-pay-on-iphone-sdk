@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/dojo-engineering/dojo-tap-to-pay-on-iphone-sdk",
       "state" : {
-        "revision" : "79912364e31b19705ca13907daa8937738d23fbd",
-        "version" : "0.0.4"
+        "revision" : "b8b5027566fca50a2e9f4d2527e32c58721893a0",
+        "version" : "0.0.5"
       }
     }
   ],

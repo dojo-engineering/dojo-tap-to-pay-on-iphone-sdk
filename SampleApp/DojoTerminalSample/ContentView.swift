@@ -1,7 +1,7 @@
 import SwiftUI
 import DojoTapToPayOniPhoneSDK /// (1) import SDK
 
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 struct ContentView: View {
     
     var dojoSDK: DojoTapToPayOniPhone? = DojoTapToPayOniPhone() /// (2) also could be  DojoTapToPayOniPhone(env: .staging)
@@ -77,6 +77,7 @@ struct ContentView: View {
                     do {
                         /// (5) take payments
                         let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
+                        print(result)
                     } catch {
                         showError(error)
                     }
