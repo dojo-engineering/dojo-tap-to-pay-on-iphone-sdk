@@ -23,17 +23,20 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
     get
   }
 }
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 public enum DojoTapToPayOniPhonePaymentResult : Swift.Int {
   case success
   case decline
+  case alreadyPaid
+  case canceled
+  case error
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
   #if compiler(>=5.3) && $AsyncAwait
@@ -56,17 +59,15 @@ public enum DojoSDKResponseCode : Swift.Int {
   case activationKeyNotProvided
   case sessionExpired
   case orderIdMissing
+  case amountError
+  case paymentIntentError
+  case fingerprintError
+  case transactionIdError
+  case cardDataError
+  case scaFlowError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
-    get
-  }
-}
-public struct Amount : Swift.Hashable {
-  public init(value: Foundation.Decimal, currencyCode: Swift.String)
-  public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: DojoTapToPayOniPhoneSDK.Amount, b: DojoTapToPayOniPhoneSDK.Amount) -> Swift.Bool
-  public var hashValue: Swift.Int {
     get
   }
 }
@@ -82,11 +83,11 @@ public enum APIEnv : Swift.String {
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Equatable {}
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Hashable {}
-@available(iOS 16.4, *)
+@available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.RawRepresentable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Hashable {}
