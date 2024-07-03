@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vIesAW896hEGRMy2q3HEXM3KyhA=
+		bDRt3cntRU62krgg2XL1Wi5T4Ag=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qj/kHg53JAAHiWpYbpSMD00NXyg=
+		Dyl0NAPh5csKBFCY8XTjW6rny2s=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AVDiFxMGG2xQE9yvur3nip2mBLo=
+		Y9j17TKTkPqMtoxEDLiR2CshkWw=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qj/kHg53JAAHiWpYbpSMD00NXyg=
+		Dyl0NAPh5csKBFCY8XTjW6rny2s=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gsr4eMXVnif0qM6y7JiQycZiFno=
+		mz/yGgbr229cua8/1uh3tVOmUO0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOXe4PieSt1RQqHsbTHy2DHXxGVGcJfOhGICbrJ5vxQ=
+			mdXY7+7WZbh2UdAbetdjCZQEXhnKxH7BMenj+d7U7WA=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgG1/1pPm2uoy3tZG5d81qqCriOJz1xIi7I6gZgIRDc=
+			xkytOl91Mm1GHiZEtzzeF7rixR0ur5aXcx7QZCgAPJY=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOXe4PieSt1RQqHsbTHy2DHXxGVGcJfOhGICbrJ5vxQ=
+			mdXY7+7WZbh2UdAbetdjCZQEXhnKxH7BMenj+d7U7WA=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pl384tSxQLiIvOBkRf/b3l6GYcICSflfwOH4U1BSbIc=
+			1tvFsRWwUfK9X5+d0BMAKJpqhIcbifXdbTtrraTevXI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
