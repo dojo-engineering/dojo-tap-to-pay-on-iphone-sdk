@@ -948,6 +948,13 @@
         "moduleName": "DojoTapToPayOniPhoneSDK"
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "DojoSDKResponseCode",
         "printedName": "DojoSDKResponseCode",
@@ -1781,6 +1788,13 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
       }
     ],
     "json_format_version": 8
@@ -2058,6 +2072,20 @@
       "offset": 1642,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/DelayManager.swift",
+      "kind": "StringLiteral",
+      "offset": 286,
+      "length": 27,
+      "value": "\"STORAGE_TERMINA_READY_KEY\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/DelayManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 3,
+      "value": "900"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/PaymentIntent.swift",
