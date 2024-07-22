@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		I/xuWQZBbNe9sVTA6O8XOEaXLmw=
+		qgbsYvFYdmD2clIj1BAkmhOD2wc=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NDKWrnlB2J4ThpTOcTIbTsAtlWQ=
+		bSSLNEOM4kXD2tfd/eP1VwRRHQ8=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NDKWrnlB2J4ThpTOcTIbTsAtlWQ=
+		bSSLNEOM4kXD2tfd/eP1VwRRHQ8=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Z/nkBcRWc/Mrgy6JypLhjBgReA8=
+		fnN6Ia1tcLvRKJotmYmBvXMWKhs=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		I/xuWQZBbNe9sVTA6O8XOEaXLmw=
+		qgbsYvFYdmD2clIj1BAkmhOD2wc=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		JuOdK6PrMO6z5LssMEvfq2NX6Nk=
+		/LS8DwX/XfBJdwgAbfZKCIn56vU=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		JuOdK6PrMO6z5LssMEvfq2NX6Nk=
+		/LS8DwX/XfBJdwgAbfZKCIn56vU=
 		</data>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aVxsDzN9hgRT+KvunXKpJFuFgcc=
+		YjcybyW/HulguOPB9NhXhSPZ2BM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,14 +70,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vFAnBaZygMlTCtQnw2TcatUmpQdJiVeVGOLfNdH++mg=
+			pjjLyZaq/6yBmf4/nFK4W6Pcg681ZS+WUcz6HPqduq8=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fxlv6BK+uuwutgwaJIgXgHVd7QvnU2rV9e830tA7IiM=
+			O+L0v0nH5nH14B73TwIct50ZHeNDtVjXK5iXUXyCgmM=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -91,28 +91,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fxlv6BK+uuwutgwaJIgXgHVd7QvnU2rV9e830tA7IiM=
+			O+L0v0nH5nH14B73TwIct50ZHeNDtVjXK5iXUXyCgmM=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zj5mzNZ0Sy1xnD/zA/7lHPuaLY6dgdzRF/I3ti8cVkM=
+			vTzHiULP8Ds0kXxKqs5nOLVNhdBWKibQ/x86FRo0zJ0=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vFAnBaZygMlTCtQnw2TcatUmpQdJiVeVGOLfNdH++mg=
+			pjjLyZaq/6yBmf4/nFK4W6Pcg681ZS+WUcz6HPqduq8=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q1bjJZz6IVz5KjemcnA6f6HgPwPZkC4FpRFuSAFrAb0=
+			qVy+78bLP4fh3hZ9VNrHCbdeGA9p0xIaR5MgSfHnkEg=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -126,14 +126,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q1bjJZz6IVz5KjemcnA6f6HgPwPZkC4FpRFuSAFrAb0=
+			qVy+78bLP4fh3hZ9VNrHCbdeGA9p0xIaR5MgSfHnkEg=
 			</data>
 		</dict>
 		<key>Modules/DojoTapToPayOniPhoneSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aaNPStUIhcApAQGMqSFR/K6hf5gfG7yC3IhafpI5IZI=
+			Ryx78t0jniVWdOp6Y2Nh+09CiplsRzzxg+QuS73td7Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

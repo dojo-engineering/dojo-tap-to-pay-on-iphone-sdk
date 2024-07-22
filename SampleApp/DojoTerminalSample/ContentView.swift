@@ -16,9 +16,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             switch terminalStatus {
-            case .operational, .provisioned:
+            case .operational:
                 viewActivated
-            case .pending, .provisioning:
+            case .pending, .provisioning, .provisioned:
                 viewNotActivated
             case .unknown, .failed:
                 viewNotActivated
@@ -76,6 +76,12 @@ struct ContentView: View {
                 Task {
                     do {
                         /// (5) take payments
+                        
+                        if let isAccountLinked = await dojoSDK?.isAccountLinked(secret),
+                           !isAccountLinked {
+                            try await dojoSDK?.linkAccount(secret)
+                        }
+                        
                         let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
                         print(result)
                     } catch {
@@ -90,7 +96,7 @@ struct ContentView: View {
                 Text("Deactivate device")
             }.onTapGesture {
                 Task {
-                    await dojoSDK?.deactiveTerminal()
+                    dojoSDK?.deactiveTerminal()
                     terminalStatus = .unknown
                 }
             }

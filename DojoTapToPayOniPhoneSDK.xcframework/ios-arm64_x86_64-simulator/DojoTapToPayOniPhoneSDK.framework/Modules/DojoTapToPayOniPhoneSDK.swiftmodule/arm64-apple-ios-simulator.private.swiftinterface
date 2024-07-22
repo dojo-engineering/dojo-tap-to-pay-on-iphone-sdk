@@ -40,16 +40,20 @@ public enum DojoTapToPayOniPhonePaymentResult : Swift.Int {
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
   #if compiler(>=5.3) && $AsyncAwait
+  public func activateTerminal(_ secret: Swift.String) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func isAccountLinked(_ secret: Swift.String) async -> Swift.Bool
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func linkAccount(_ secret: Swift.String) async throws
+  #endif
+  public func deactiveTerminal()
+  #if compiler(>=5.3) && $AsyncAwait
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func activateTerminal(_ activationKey: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  public func deactiveTerminal() async
   #endif
   @objc deinit
 }
@@ -65,6 +69,8 @@ public enum DojoSDKResponseCode : Swift.Int {
   case transactionIdError
   case cardDataError
   case scaFlowError
+  case notOperational
+  case accountNotLinked
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
