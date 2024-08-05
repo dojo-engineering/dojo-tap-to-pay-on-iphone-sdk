@@ -77,7 +77,7 @@ struct ContentView: View {
                     do {
                         /// (5) take payments
                         
-                        if let isAccountLinked = await dojoSDK?.isAccountLinked(secret),
+                        if let isAccountLinked = try? await dojoSDK?.isAccountLinked(secret),
                            !isAccountLinked {
                             try await dojoSDK?.linkAccount(secret)
                         }

@@ -24,12 +24,16 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   }
 }
 @available(iOS 16.7, *)
-public enum DojoTapToPayOniPhonePaymentResult : Swift.Int {
+public struct DojoTapToPayOniPhonePaymentResult {
+}
+public struct DojoTapToPayOniPhonePaymentResultData {
+}
+@available(iOS 16.7, *)
+public enum DojoTapToPayOniPhonePaymentStatus : Swift.Int {
   case success
   case decline
   case alreadyPaid
   case canceled
-  case error
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -40,10 +44,10 @@ public enum DojoTapToPayOniPhonePaymentResult : Swift.Int {
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
   #if compiler(>=5.3) && $AsyncAwait
-  public func activateTerminal(_ secret: Swift.String) async throws
+  public func activateTerminal(_ secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public func isAccountLinked(_ secret: Swift.String) async -> Swift.Bool
+  public func isAccountLinked(_ secret: Swift.String) async throws -> Swift.Bool
   #endif
   #if compiler(>=5.3) && $AsyncAwait
   public func linkAccount(_ secret: Swift.String) async throws
@@ -57,20 +61,15 @@ public class DojoTapToPayOniPhone {
   #endif
   @objc deinit
 }
-public enum DojoSDKResponseCode : Swift.Int {
-  case urlCompositionError
-  case decodingError
-  case activationKeyNotProvided
-  case sessionExpired
-  case orderIdMissing
-  case amountError
-  case paymentIntentError
-  case fingerprintError
-  case transactionIdError
-  case cardDataError
-  case scaFlowError
-  case notOperational
+public enum DojoSDKErrorCode : Swift.Int {
+  case internalError
+  case networkError
+  case secretNotProvided
+  case secretExpired
+  case paymentIntentNotProvided
+  case terminalNotOperational
   case accountNotLinked
+  case cardReaderError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -90,14 +89,14 @@ extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
 @available(iOS 16.7, *)
-extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Equatable {}
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus : Swift.Equatable {}
 @available(iOS 16.7, *)
-extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.Hashable {}
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus : Swift.Hashable {}
 @available(iOS 16.7, *)
-extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult : Swift.RawRepresentable {}
-extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Equatable {}
-extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.Hashable {}
-extension DojoTapToPayOniPhoneSDK.DojoSDKResponseCode : Swift.RawRepresentable {}
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus : Swift.RawRepresentable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Equatable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Hashable {}
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.RawRepresentable {}
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.RawRepresentable {}
