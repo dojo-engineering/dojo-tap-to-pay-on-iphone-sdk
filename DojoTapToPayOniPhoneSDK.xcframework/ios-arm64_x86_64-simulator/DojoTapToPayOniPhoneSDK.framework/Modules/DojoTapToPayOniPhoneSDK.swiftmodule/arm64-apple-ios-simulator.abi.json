@@ -435,307 +435,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "DojoTapToPayOniPhonePaymentResult",
-        "printedName": "DojoTapToPayOniPhonePaymentResult",
-        "declKind": "Struct",
-        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV",
-        "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV",
-        "moduleName": "DojoTapToPayOniPhoneSDK",
-        "intro_iOS": "16.7",
-        "declAttributes": [
-          "AccessControl",
-          "Available"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DojoTapToPayOniPhonePaymentResultData",
-        "printedName": "DojoTapToPayOniPhonePaymentResultData",
-        "declKind": "Struct",
-        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF17PaymentResultDataV",
-        "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF17PaymentResultDataV",
-        "moduleName": "DojoTapToPayOniPhoneSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DojoTapToPayOniPhonePaymentStatus",
-        "printedName": "DojoTapToPayOniPhonePaymentStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "success",
-            "printedName": "success",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoTapToPayOniPhonePaymentStatus",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoTapToPayOniPhonePaymentStatus",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO7successyA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO7successyA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "decline",
-            "printedName": "decline",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoTapToPayOniPhonePaymentStatus",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoTapToPayOniPhonePaymentStatus",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO7declineyA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO7declineyA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "alreadyPaid",
-            "printedName": "alreadyPaid",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoTapToPayOniPhonePaymentStatus",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoTapToPayOniPhonePaymentStatus",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO11alreadyPaidyA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO11alreadyPaidyA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "canceled",
-            "printedName": "canceled",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoTapToPayOniPhonePaymentStatus",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoTapToPayOniPhonePaymentStatus",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8canceledyA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8canceledyA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoTapToPayOniPhonePaymentStatus",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentStatus",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueACSgSi_tcfc",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueACSgSi_tcfc",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueSivp",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueSivp",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueSivg",
-                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO8rawValueSivg",
-                "moduleName": "DojoTapToPayOniPhoneSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO",
-        "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentStatusO",
-        "moduleName": "DojoTapToPayOniPhoneSDK",
-        "intro_iOS": "16.7",
-        "declAttributes": [
-          "AccessControl",
-          "Available"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "DojoTapToPayOniPhone",
         "printedName": "DojoTapToPayOniPhone",
         "children": [
@@ -960,6 +659,842 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DojoTapToPayOniPhoneSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DojoTapToPayOniPhonePaymentResult",
+        "printedName": "DojoTapToPayOniPhonePaymentResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Status",
+                "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6statusAC6StatusOvp",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6statusAC6StatusOvp",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Status",
+                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6statusAC6StatusOvg",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6statusAC6StatusOvg",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Data",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4dataAC4DataVSgvp",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4dataAC4DataVSgvp",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Data",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4dataAC4DataVSgvg",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4dataAC4DataVSgvg",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Data",
+            "printedName": "Data",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "transactionId",
+                "printedName": "transactionId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV13transactionIdSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV13transactionIdSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV13transactionIdSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV13transactionIdSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "totalAmount",
+                "printedName": "totalAmount",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.UInt64?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt64",
+                        "printedName": "Swift.UInt64",
+                        "usr": "s:s6UInt64V"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV11totalAmounts6UInt64VSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV11totalAmounts6UInt64VSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.UInt64?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt64",
+                            "printedName": "Swift.UInt64",
+                            "usr": "s:s6UInt64V"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV11totalAmounts6UInt64VSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV11totalAmounts6UInt64VSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "transactionType",
+                "printedName": "transactionType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV15transactionTypeSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV15transactionTypeSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV15transactionTypeSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV15transactionTypeSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "pan",
+                "printedName": "pan",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV3panSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV3panSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV3panSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV3panSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cardScheme",
+                "printedName": "cardScheme",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV10cardSchemeSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV10cardSchemeSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV10cardSchemeSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV10cardSchemeSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "authCode",
+                "printedName": "authCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8authCodeSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8authCodeSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8authCodeSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8authCodeSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cardType",
+                "printedName": "cardType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8cardTypeSSSgvp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8cardTypeSSSgvp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8cardTypeSSSgvg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV8cardTypeSSSgvg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV4DataV",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Status",
+            "printedName": "Status",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "success",
+                "printedName": "success",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7successyA2EmF",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7successyA2EmF",
+                "moduleName": "DojoTapToPayOniPhoneSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "decline",
+                "printedName": "decline",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7declineyA2EmF",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7declineyA2EmF",
+                "moduleName": "DojoTapToPayOniPhoneSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "alreadyPaid",
+                "printedName": "alreadyPaid",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO11alreadyPaidyA2EmF",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO11alreadyPaidyA2EmF",
+                "moduleName": "DojoTapToPayOniPhoneSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "canceled",
+                "printedName": "canceled",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Status",
+                            "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8canceledyA2EmF",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8canceledyA2EmF",
+                "moduleName": "DojoTapToPayOniPhoneSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Status",
+                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
+                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueAESgSi_tcfc",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueAESgSi_tcfc",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueSivp",
+                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueSivp",
+                "moduleName": "DojoTapToPayOniPhoneSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueSivg",
+                    "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO8rawValueSivg",
+                    "moduleName": "DojoTapToPayOniPhoneSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "enumRawTypeName": "Int",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV",
+        "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV",
+        "moduleName": "DojoTapToPayOniPhoneSDK",
+        "intro_iOS": "16.7",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ]
       },
       {
         "kind": "Import",
@@ -1911,94 +2446,94 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1181,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1206,
-      "length": 3,
-      "value": "119"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1230,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1181,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1206,
-      "length": 3,
-      "value": "119"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1230,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1160,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1181,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1206,
-      "length": 3,
-      "value": "119"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1230,
-      "length": 3,
-      "value": "120"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2591,
+      "offset": 1987,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 637,
+      "length": 3,
+      "value": "119"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 637,
+      "length": 3,
+      "value": "119"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 3,
+      "value": "120"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 608,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 637,
+      "length": 3,
+      "value": "119"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
+      "kind": "IntegerLiteral",
+      "offset": 665,
+      "length": 3,
+      "value": "120"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/CardReader.swift",
@@ -2360,14 +2895,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 825,
+      "offset": 827,
       "length": 10,
       "value": "\"purchase\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 858,
+      "offset": 860,
       "length": 9,
       "value": "\"unknown\""
     },
