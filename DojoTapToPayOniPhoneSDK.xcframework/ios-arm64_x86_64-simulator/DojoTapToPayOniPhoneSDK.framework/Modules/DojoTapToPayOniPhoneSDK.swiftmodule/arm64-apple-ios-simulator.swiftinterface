@@ -35,6 +35,7 @@ public class DojoTapToPayOniPhone {
   #if compiler(>=5.3) && $AsyncAwait
   public func linkAccount(_ secret: Swift.String) async throws
   #endif
+  public func getFingerprint() -> Swift.String?
   public func deactiveTerminal()
   #if compiler(>=5.3) && $AsyncAwait
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
