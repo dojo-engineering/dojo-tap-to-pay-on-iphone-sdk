@@ -259,9 +259,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DojoTerminalStatus",
-                "printedName": "DojoTapToPayOniPhoneSDK.DojoTerminalStatus",
-                "usr": "s:23DojoTapToPayOniPhoneSDK0A14TerminalStatusO"
+                "name": "Optional",
+                "printedName": "DojoTapToPayOniPhoneSDK.DojoTerminalStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DojoTerminalStatus",
+                    "printedName": "DojoTapToPayOniPhoneSDK.DojoTerminalStatus",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK0A14TerminalStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -271,8 +279,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0A14TerminalStatusO8rawValueACSS_tcfc",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0A14TerminalStatusO8rawValueACSS_tcfc",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0A14TerminalStatusO8rawValueACSgSS_tcfc",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0A14TerminalStatusO8rawValueACSgSS_tcfc",
             "moduleName": "DojoTapToPayOniPhoneSDK",
             "declAttributes": [
               "AccessControl"
@@ -1313,43 +1321,6 @@
               },
               {
                 "kind": "Var",
-                "name": "failure",
-                "printedName": "failure",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type) -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Status",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Status",
-                            "printedName": "DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status",
-                            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7failureyA2EmF",
-                "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF13PaymentResultV6StatusO7failureyA2EmF",
-                "moduleName": "DojoTapToPayOniPhoneSDK"
-              },
-              {
-                "kind": "Var",
                 "name": "alreadyPaid",
                 "printedName": "alreadyPaid",
                 "children": [
@@ -1552,203 +1523,6 @@
         "declAttributes": [
           "AccessControl",
           "Available"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DojoTapToPayOniPhoneSDK"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AnyDojoSDKError",
-        "printedName": "AnyDojoSDKError",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "error",
-            "printedName": "error",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NSError",
-                "printedName": "Foundation.NSError",
-                "usr": "c:objc(cs)NSError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorSo7NSErrorCvp",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorSo7NSErrorCvp",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSError",
-                    "printedName": "Foundation.NSError",
-                    "usr": "c:objc(cs)NSError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorSo7NSErrorCvg",
-                "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorSo7NSErrorCvg",
-                "moduleName": "DojoTapToPayOniPhoneSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoSDKErrorCode",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV4codeAA0aI4CodeOSgvp",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV4codeAA0aI4CodeOSgvp",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoSDKErrorCode",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV4codeAA0aI4CodeOSgvg",
-                "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV4codeAA0aI4CodeOSgvg",
-                "moduleName": "DojoTapToPayOniPhoneSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "description",
-            "printedName": "description",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV11descriptionSSvp",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV11descriptionSSvp",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV11descriptionSSvg",
-                "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV11descriptionSSvg",
-                "moduleName": "DojoTapToPayOniPhoneSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AnyDojoSDKError",
-                "printedName": "DojoTapToPayOniPhoneSDK.AnyDojoSDKError",
-                "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorACs5Error_p_tcfc",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV5errorACs5Error_p_tcfc",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV",
-        "mangledName": "$s23DojoTapToPayOniPhoneSDK03AnyA8SDKErrorV",
-        "moduleName": "DojoTapToPayOniPhoneSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
         ]
       },
       {
@@ -2092,80 +1866,6 @@
             "declKind": "EnumElement",
             "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO15cardReaderErroryA2CmF",
             "mangledName": "$s23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO15cardReaderErroryA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "cardReaderPrepareExpired",
-            "printedName": "cardReaderPrepareExpired",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoSDKErrorCode.Type) -> DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoSDKErrorCode",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoSDKErrorCode",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO24cardReaderPrepareExpiredyA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO24cardReaderPrepareExpiredyA2CmF",
-            "moduleName": "DojoTapToPayOniPhoneSDK"
-          },
-          {
-            "kind": "Var",
-            "name": "cardReaderSessionError",
-            "printedName": "cardReaderSessionError",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DojoTapToPayOniPhoneSDK.DojoSDKErrorCode.Type) -> DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DojoSDKErrorCode",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DojoSDKErrorCode",
-                        "printedName": "DojoTapToPayOniPhoneSDK.DojoSDKErrorCode",
-                        "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO22cardReaderSessionErroryA2CmF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0A12SDKErrorCodeO22cardReaderSessionErroryA2CmF",
             "moduleName": "DojoTapToPayOniPhoneSDK"
           },
           {
@@ -2811,21 +2511,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
+      "offset": 637,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 691,
+      "offset": 665,
       "length": 3,
       "value": "120"
     },
@@ -2846,21 +2539,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
+      "offset": 637,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 691,
+      "offset": 665,
       "length": 3,
       "value": "120"
     },
@@ -2881,28 +2567,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 633,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
+      "offset": 637,
       "length": 3,
       "value": "119"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Payment\/PaymentResult.swift",
       "kind": "IntegerLiteral",
-      "offset": 691,
+      "offset": 665,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/CardReader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1826,
+      "offset": 1721,
       "length": 4,
       "value": "true"
     },
@@ -2935,228 +2614,186 @@
       "value": "\"location-id\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "StringLiteral",
       "offset": 78,
       "length": 27,
       "value": "\"dojo-tap-to-pay-sdk-error\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "StringLiteral",
       "offset": 78,
       "length": 27,
       "value": "\"dojo-tap-to-pay-sdk-error\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 300,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 401,
       "length": 3,
       "value": "700"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 441,
-      "length": 3,
-      "value": "701"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 479,
-      "length": 3,
-      "value": "720"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 300,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 401,
       "length": 3,
       "value": "700"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 441,
-      "length": 3,
-      "value": "701"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 479,
-      "length": 3,
-      "value": "720"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 170,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 198,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 231,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 3,
       "value": "301"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 300,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 338,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 3,
       "value": "600"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/ErrorBuilder.swift",
       "kind": "IntegerLiteral",
       "offset": 401,
       "length": 3,
       "value": "700"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 441,
-      "length": 3,
-      "value": "701"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Errors\/ErrorBuilder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 479,
-      "length": 3,
-      "value": "720"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/PollingManager.swift",
@@ -3273,13 +2910,6 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 533,
-      "length": 20,
-      "value": "\"validation-failure\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
       "offset": 396,
       "length": 20,
       "value": "\"transaction-exists\""
@@ -3308,63 +2938,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 533,
-      "length": 20,
-      "value": "\"validation-failure\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
-      "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 827,
       "length": 10,
       "value": "\"purchase\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 860,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 1102,
+      "offset": 1062,
       "length": 5,
       "value": "\"601\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
-      "offset": 1102,
+      "offset": 1062,
       "length": 5,
       "value": "\"601\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/NetworkingService.swift",
       "kind": "IntegerLiteral",
-      "offset": 592,
+      "offset": 593,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/NetworkingService.swift",
       "kind": "StringLiteral",
-      "offset": 3151,
+      "offset": 4267,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/NetworkingService.swift",
       "kind": "StringLiteral",
-      "offset": 3183,
+      "offset": 4299,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/NetworkingService.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 4333,
       "length": 8,
       "value": "\"DELETE\""
     },

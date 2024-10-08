@@ -17,7 +17,7 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   case operational
   case failed
   case unknown
-  public init(rawValue: Swift.String)
+  public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -64,7 +64,6 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
   public enum Status : Swift.Int {
     case success
     case decline
-    case failure
     case alreadyPaid
     case canceled
     public init?(rawValue: Swift.Int)
@@ -73,12 +72,6 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
       get
     }
   }
-}
-public struct AnyDojoSDKError {
-  public let error: Foundation.NSError
-  public let code: DojoTapToPayOniPhoneSDK.DojoSDKErrorCode?
-  public let description: Swift.String
-  public init(error: any Swift.Error)
 }
 public enum DojoSDKErrorCode : Swift.Int {
   case internalError
@@ -89,8 +82,6 @@ public enum DojoSDKErrorCode : Swift.Int {
   case terminalNotOperational
   case accountNotLinked
   case cardReaderError
-  case cardReaderPrepareExpired
-  case cardReaderSessionError
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
