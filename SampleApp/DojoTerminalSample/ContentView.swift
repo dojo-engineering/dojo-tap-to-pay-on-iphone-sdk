@@ -9,9 +9,11 @@ struct ContentView: View {
     @State private var showingErrorAlert = false
     @State private var terminalStatus: DojoTerminalStatus?
     @State private var errorText: String = ""
+    @State private var paymentIntentText: String = ""
+    @State private var emailText: String = ""
     
     let secret = "secret" // refer to our documentation
-    let paymentIntentId = "payment-intent-id" // https://docs.dojo.tech/payments/api#tag/Payment-intents/operation/PaymentIntents_CreatePaymentIntent
+    @State private var paymentIntentId = "payment-intent-id" // https://docs.dojo.tech/payments/api#tag/Payment-intents/operation/PaymentIntents_CreatePaymentIntent
     
     var body: some View {
         VStack {
@@ -26,7 +28,8 @@ struct ContentView: View {
                 Text("Checking terminal status")
             }
             Divider()
-            deviceInfo
+            viewSendReceipt
+//            deviceInfo
         }.task {
             do {
                 /// (3) check current device status
@@ -116,5 +119,52 @@ struct ContentView: View {
         errorText = (error as NSError).debugDescription
         showingErrorAlert = true
         terminalStatus = .unknown
+    }
+    
+    var viewSendReceipt: some View {
+        VStack {
+            paymentIntentInputField
+            emailInputField
+            Button("Send Receipt") {
+                if !paymentIntentText.isEmpty {
+                    paymentIntentId = paymentIntentText
+                }
+                Task {
+                    do {
+                        try await dojoSDK?.sendReceipt(paymentIntentId: paymentIntentId, secret: secret, emails: [emailText])
+                    } catch {
+                        showError(error)
+                    }
+                }
+            }
+        }
+    }
+    
+    var paymentIntentInputField: some View {
+        VStack {
+            TextField("Payment-intent-id", text: $paymentIntentText)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.asciiCapable)
+                .textInputAutocapitalization(.never)
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                    }
+                }
+                .padding()
+        }
+    }
+    
+    var emailInputField: some View {
+        VStack {
+            TextField("Email", text: $emailText)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.asciiCapable)
+                .textInputAutocapitalization(.never)
+                .toolbar {
+                    ToolbarItemGroup(placement: .keyboard) {
+                    }
+                }
+                .padding()
+        }
     }
 }
