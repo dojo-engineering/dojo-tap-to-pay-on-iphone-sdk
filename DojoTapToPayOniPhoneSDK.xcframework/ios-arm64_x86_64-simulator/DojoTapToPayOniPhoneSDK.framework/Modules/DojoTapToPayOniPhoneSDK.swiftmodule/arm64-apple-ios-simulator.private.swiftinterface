@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DojoTapToPayOniPhoneSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 @_exported import DojoTapToPayOniPhoneSDK
 import Foundation
@@ -26,23 +27,14 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
 @available(iOS 16.7, *)
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
-  #if compiler(>=5.3) && $AsyncAwait
   public func activateTerminal(_ secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func isAccountLinked(_ secret: Swift.String) async throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func linkAccount(_ secret: Swift.String) async throws
-  #endif
   public func getFingerprint() -> Swift.String?
   public func deactiveTerminal()
-  #if compiler(>=5.3) && $AsyncAwait
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
-  #endif
+  public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String]) async throws
   @objc deinit
 }
 @available(iOS 16.7, *)
@@ -68,6 +60,7 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
     case alreadyPaid
     case canceled
     public init?(rawValue: Swift.Int)
+    @available(iOS 16.7, *)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -86,6 +79,8 @@ public enum DojoSDKErrorCode : Swift.Int {
   case secretNotProvided
   case secretExpired
   case paymentIntentNotProvided
+  case emailsNotProvided
+  case receiptsError
   case terminalNotOperational
   case accountNotLinked
   case cardReaderError
