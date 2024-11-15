@@ -558,35 +558,6 @@
           },
           {
             "kind": "Function",
-            "name": "getFingerprint",
-            "printedName": "getFingerprint()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF0C14getFingerprintSSSgyF",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF0C14getFingerprintSSSgyF",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "deactiveTerminal",
             "printedName": "deactiveTerminal()",
             "children": [
@@ -723,6 +694,83 @@
               "RawDocComment"
             ],
             "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocation",
+            "printedName": "setLocation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF0C11setLocationyySSF",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF0C11setLocationyySSF",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getFingerprint",
+            "printedName": "getFingerprint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF0C14getFingerprintSSSgyF",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF0C14getFingerprintSSSgyF",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getEnvironment",
+            "printedName": "getEnvironment()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "APIEnv",
+                "printedName": "DojoTapToPayOniPhoneSDK.APIEnv",
+                "usr": "s:23DojoTapToPayOniPhoneSDK6APIEnvO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:23DojoTapToPayOniPhoneSDK0abcdeF0C14getEnvironmentAA6APIEnvOyF",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK0abcdeF0C14getEnvironmentAA6APIEnvOyF",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -2717,6 +2765,39 @@
             "moduleName": "DojoTapToPayOniPhoneSDK"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DojoTapToPayOniPhoneSDK.APIEnv?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APIEnv",
+                    "printedName": "DojoTapToPayOniPhoneSDK.APIEnv",
+                    "usr": "s:23DojoTapToPayOniPhoneSDK6APIEnvO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23DojoTapToPayOniPhoneSDK6APIEnvO8rawValueACSgSS_tcfc",
+            "mangledName": "$s23DojoTapToPayOniPhoneSDK6APIEnvO8rawValueACSgSS_tcfc",
+            "moduleName": "DojoTapToPayOniPhoneSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
@@ -2754,39 +2835,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "DojoTapToPayOniPhoneSDK.APIEnv?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "APIEnv",
-                    "printedName": "DojoTapToPayOniPhoneSDK.APIEnv",
-                    "usr": "s:23DojoTapToPayOniPhoneSDK6APIEnvO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:23DojoTapToPayOniPhoneSDK6APIEnvO8rawValueACSgSS_tcfc",
-            "mangledName": "$s23DojoTapToPayOniPhoneSDK6APIEnvO8rawValueACSgSS_tcfc",
-            "moduleName": "DojoTapToPayOniPhoneSDK",
-            "implicit": true,
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Enum",
@@ -2969,7 +3017,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/DojoTapToPayOniPhoneSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 2370,
+      "offset": 2374,
       "length": 5,
       "value": "false"
     },
@@ -3156,27 +3204,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/OrderIdProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 190,
-      "length": 108,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/OrderIdProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 242,
-      "length": 1,
-      "value": "\".order.id.terminal-\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/OrderIdProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 297,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Networking\/Entities\/TransactionStart.swift",
       "kind": "StringLiteral",
       "offset": 396,
@@ -3296,24 +3323,10 @@
       "value": "\"https:\/\/gateway-stg.nonprod.ld.payments.dojo.dev\/v1\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/FingerprintProvider.swift",
+      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/SettingsProvider.swift",
       "kind": "StringLiteral",
-      "offset": 206,
-      "length": 126,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/FingerprintProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 258,
-      "length": 1,
-      "value": "\".proximity.reader.device.fingerprint-\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/DojoTapToPayOniPhoneSDK\/DojoTapToPayOniPhoneSDK\/Sources\/DojoTapToPayOniPhoneSDKSPM\/Classes\/Core\/Helpers\/FingerprintProvider.swift",
-      "kind": "StringLiteral",
-      "offset": 331,
-      "length": 1,
+      "offset": 98,
+      "length": 2,
       "value": "\"\""
     },
     {

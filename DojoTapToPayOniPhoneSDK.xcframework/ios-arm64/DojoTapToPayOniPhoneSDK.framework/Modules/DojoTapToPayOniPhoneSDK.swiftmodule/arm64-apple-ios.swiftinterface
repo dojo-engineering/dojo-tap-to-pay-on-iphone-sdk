@@ -30,11 +30,13 @@ public class DojoTapToPayOniPhone {
   public func activateTerminal(_ secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   public func isAccountLinked(_ secret: Swift.String) async throws -> Swift.Bool
   public func linkAccount(_ secret: Swift.String) async throws
-  public func getFingerprint() -> Swift.String?
   public func deactiveTerminal()
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
   public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String]) async throws
+  public func setLocation(_ locationId: Swift.String)
+  public func getFingerprint() -> Swift.String?
+  public func getEnvironment() -> DojoTapToPayOniPhoneSDK.APIEnv
   @objc deinit
 }
 @available(iOS 16.7, *)
