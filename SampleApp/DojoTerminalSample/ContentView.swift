@@ -29,7 +29,7 @@ struct ContentView: View {
             }
             Divider()
             viewSendReceipt
-//            deviceInfo
+            viewCurrentEnv
         }.task {
             do {
                 /// (3) check current device status
@@ -151,6 +151,14 @@ struct ContentView: View {
                     }
                 }
                 .padding()
+        }
+    }
+    
+    var viewCurrentEnv: some View {
+        VStack {
+            if let dojoSDK = dojoSDK {
+                Text("Env: \(dojoSDK.getEnvironment())")
+            }
         }
     }
     
