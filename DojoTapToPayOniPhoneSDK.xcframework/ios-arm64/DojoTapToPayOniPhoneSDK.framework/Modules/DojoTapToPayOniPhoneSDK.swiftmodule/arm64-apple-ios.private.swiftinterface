@@ -32,8 +32,9 @@ public class DojoTapToPayOniPhone {
   public func linkAccount(_ secret: Swift.String) async throws
   public func deactiveTerminal()
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  public func getTerminalStatus(secret: Swift.String, terminalId: Swift.String, fingerprint: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
   public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
-  public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String]) async throws
+  public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String], metaData: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhoneReceiptMetaData) async throws
   public func setLocation(_ locationId: Swift.String)
   public func getFingerprint() -> Swift.String?
   public func getEnvironment() -> DojoTapToPayOniPhoneSDK.APIEnv
@@ -54,6 +55,8 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
     public let cardScheme: Swift.String?
     public let authCode: Swift.String?
     public let cardType: Swift.String?
+    public let terminalId: Swift.String?
+    public let timestamp: Swift.String?
   }
   public enum Status : Swift.Int {
     case success
@@ -102,6 +105,18 @@ public enum APIEnv : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+public struct DojoTapToPayOniPhoneReceiptMetaData {
+  public let transactionId: Swift.String?
+  public let amount: Swift.UInt64?
+  public let transactionType: Swift.String?
+  public let pan: Swift.String?
+  public let cardScheme: Swift.String?
+  public let authCode: Swift.String?
+  public let cardType: Swift.String?
+  public let terminalId: Swift.String?
+  public let timestamp: Swift.String?
+  public init(transactionId: Swift.String?, amount: Swift.UInt64?, transactionType: Swift.String?, pan: Swift.String?, cardScheme: Swift.String?, authCode: Swift.String?, cardType: Swift.String?, terminalId: Swift.String?, timestamp: Swift.String?)
 }
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
