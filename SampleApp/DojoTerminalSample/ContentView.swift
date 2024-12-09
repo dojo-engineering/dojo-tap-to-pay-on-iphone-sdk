@@ -10,6 +10,7 @@ struct ContentView: View {
     @State private var terminalStatus: DojoTerminalStatus?
     @State private var errorText: String = ""
     @State private var paymentIntentText: String = ""
+    @State private var paymentResult: DojoTapToPayOniPhonePaymentResult?
     @State private var emailText: String = ""
     
     let secret = "secret" // refer to our documentation
@@ -56,7 +57,8 @@ struct ContentView: View {
                 do {
                     showingActivationAlert = true
                     /// (4) activate if not .operational or .provisioned
-                    try await dojoSDK?.activateTerminal(secret)
+                    let initialStatus = try await dojoSDK?.activateTerminal(secret)
+                    print(initialStatus ?? "Unknown")
                     terminalStatus = try await dojoSDK?.getTerminalActivationStatus(notifyWhenOperational: true, secret: secret)
                 } catch {
                     print(error)
@@ -86,7 +88,8 @@ struct ContentView: View {
                         }
                         
                         let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
-                        print(result)
+                        paymentResult = result
+                        print(result?.status ?? "Unknown status")
                     } catch {
                         showError(error)
                     }
@@ -131,7 +134,22 @@ struct ContentView: View {
                 }
                 Task {
                     do {
-                        try await dojoSDK?.sendReceipt(paymentIntentId: paymentIntentId, secret: secret, emails: [emailText])
+                        try await dojoSDK?.sendReceipt(
+                            paymentIntentId: paymentIntentId,
+                            secret: secret,
+                            emails: [emailText],
+                            metaData: .init(
+                                transactionId: paymentResult?.data?.transactionId,
+                                amount: paymentResult?.data?.totalAmount,
+                                transactionType: paymentResult?.data?.transactionType,
+                                pan: paymentResult?.data?.pan,
+                                cardScheme: paymentResult?.data?.cardScheme,
+                                authCode: paymentResult?.data?.authCode,
+                                cardType: paymentResult?.data?.cardType,
+                                terminalId: paymentResult?.data?.terminalId,
+                                timestamp: paymentResult?.data?.timestamp
+                            )
+                        )
                     } catch {
                         showError(error)
                     }

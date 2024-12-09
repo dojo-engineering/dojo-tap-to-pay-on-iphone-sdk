@@ -395,7 +395,7 @@
 			repositoryURL = "https://github.com/dojo-engineering/dojo-tap-to-pay-on-iphone-sdk";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.18;
+				minimumVersion = 0.0.19;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
