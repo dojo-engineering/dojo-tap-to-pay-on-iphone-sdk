@@ -57,6 +57,7 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
     public let cardType: Swift.String?
     public let terminalId: Swift.String?
     public let timestamp: Swift.String?
+    public let declineReason: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason?
   }
   public enum Status : Swift.Int {
     case success
@@ -68,6 +69,14 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
     @available(iOS 16.7, *)
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum DeclineReason {
+    case onlinePinError
+    public static func == (a: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason, b: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
       get
     }
   }
@@ -127,6 +136,10 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swi
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.Hashable {}
 @available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.RawRepresentable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Equatable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Hashable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.RawRepresentable {}
