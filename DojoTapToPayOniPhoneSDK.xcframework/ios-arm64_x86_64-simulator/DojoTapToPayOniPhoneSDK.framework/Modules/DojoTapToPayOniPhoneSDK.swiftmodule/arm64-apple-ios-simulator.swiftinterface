@@ -19,6 +19,7 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   case failed
   case unknown
   public init(rawValue: Swift.String)
+  public init(rawValue: Swift.Int)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -89,6 +90,7 @@ public struct AnyDojoSDKError {
 }
 public enum DojoSDKErrorCode : Swift.Int {
   case internalError
+  case locationNotConfigured
   case networkError
   case secretNotProvided
   case secretExpired
