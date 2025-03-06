@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DojoTapToPayOniPhoneSDK
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DojoTapToPayOniPhoneSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Combine
 @_exported import DojoTapToPayOniPhoneSDK
@@ -11,6 +11,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@available(iOS 13.0, *)
 public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   case pending
   case provisioning
@@ -20,6 +21,7 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
   case unknown
   public init(rawValue: Swift.String)
   public init(rawValue: Swift.Int)
+  @available(iOS 13.0, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -82,12 +84,14 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
     }
   }
 }
+@available(iOS 13.0, *)
 public struct AnyDojoSDKError {
   public let error: Foundation.NSError
   public let code: DojoTapToPayOniPhoneSDK.DojoSDKErrorCode?
   public let description: Swift.String
   public init(error: any Swift.Error)
 }
+@available(iOS 13.0, *)
 public enum DojoSDKErrorCode : Swift.Int {
   case internalError
   case locationNotConfigured
@@ -103,20 +107,24 @@ public enum DojoSDKErrorCode : Swift.Int {
   case cardReaderPrepareExpired
   case cardReaderSessionError
   public init?(rawValue: Swift.Int)
+  @available(iOS 13.0, *)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
+@available(iOS 13.0, *)
 public enum APIEnv : Swift.String {
   case staging
   case prod
   public init?(rawValue: Swift.String)
+  @available(iOS 13.0, *)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
+@available(iOS 13.0, *)
 public struct DojoTapToPayOniPhoneReceiptMetaData {
   public let transactionId: Swift.String?
   public let amount: Swift.UInt64?
@@ -129,8 +137,11 @@ public struct DojoTapToPayOniPhoneReceiptMetaData {
   public let timestamp: Swift.String?
   public init(transactionId: Swift.String?, amount: Swift.UInt64?, transactionType: Swift.String?, pan: Swift.String?, cardScheme: Swift.String?, authCode: Swift.String?, cardType: Swift.String?, terminalId: Swift.String?, timestamp: Swift.String?)
 }
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
 @available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.Equatable {}
@@ -142,9 +153,15 @@ extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swi
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Equatable {}
 @available(iOS 16.7, *)
 extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Hashable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Equatable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Hashable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Equatable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Hashable {}
+@available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.RawRepresentable {}
