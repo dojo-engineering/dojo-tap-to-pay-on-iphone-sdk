@@ -1,0 +1,6 @@
+framework module DojoTapToPayOniPhoneSDK {
+  umbrella header "DojoTapToPayOniPhoneSDK.h"
+  export *
+
+  module * { export * }
+}

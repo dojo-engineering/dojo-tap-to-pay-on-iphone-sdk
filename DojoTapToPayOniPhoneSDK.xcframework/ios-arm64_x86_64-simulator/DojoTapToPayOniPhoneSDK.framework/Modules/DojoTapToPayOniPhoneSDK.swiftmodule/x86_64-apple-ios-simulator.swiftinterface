@@ -1,0 +1,167 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name DojoTapToPayOniPhoneSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Combine
+@_exported import DojoTapToPayOniPhoneSDK
+import Foundation
+import ProximityReader
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOS 13.0, *)
+public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
+  case pending
+  case provisioning
+  case provisioned
+  case operational
+  case failed
+  case unknown
+  public init(rawValue: Swift.String)
+  public init(rawValue: Swift.Int)
+  @available(iOS 13.0, *)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 16.7, *)
+public class DojoTapToPayOniPhone {
+  public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
+  public func activateTerminal(_ secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  public func isAccountLinked(_ secret: Swift.String) async throws -> Swift.Bool
+  public func linkAccount(_ secret: Swift.String) async throws
+  public func deactiveTerminal()
+  public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  public func getTerminalStatus(secret: Swift.String, terminalId: Swift.String, fingerprint: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
+  public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String], metaData: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhoneReceiptMetaData) async throws
+  public func setLocation(_ locationId: Swift.String)
+  public func getFingerprint() -> Swift.String?
+  public func getEnvironment() -> DojoTapToPayOniPhoneSDK.APIEnv
+  @objc deinit
+}
+@available(iOS 16.7, *)
+public struct DojoTapToPayOniPhonePaymentResult {
+  public let status: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status
+  public let data: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Data?
+}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult {
+  public struct Data {
+    public let transactionId: Swift.String?
+    public let totalAmount: Swift.UInt64?
+    public let transactionType: Swift.String?
+    public let pan: Swift.String?
+    public let cardScheme: Swift.String?
+    public let authCode: Swift.String?
+    public let cardType: Swift.String?
+    public let terminalId: Swift.String?
+    public let timestamp: Swift.String?
+    public let declineReason: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason?
+  }
+  public enum Status : Swift.Int {
+    case success
+    case decline
+    case failure
+    case alreadyPaid
+    case canceled
+    public init?(rawValue: Swift.Int)
+    @available(iOS 16.7, *)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  public enum DeclineReason {
+    case onlinePinError
+    public static func == (a: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason, b: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+@available(iOS 13.0, *)
+public struct AnyDojoSDKError {
+  public let error: Foundation.NSError
+  public let code: DojoTapToPayOniPhoneSDK.DojoSDKErrorCode?
+  public let description: Swift.String
+  public init(error: any Swift.Error)
+}
+@available(iOS 13.0, *)
+public enum DojoSDKErrorCode : Swift.Int {
+  case internalError
+  case locationNotConfigured
+  case networkError
+  case secretNotProvided
+  case secretExpired
+  case paymentIntentNotProvided
+  case emailsNotProvided
+  case receiptsError
+  case terminalNotOperational
+  case accountNotLinked
+  case cardReaderError
+  case cardReaderPrepareExpired
+  case cardReaderSessionError
+  public init?(rawValue: Swift.Int)
+  @available(iOS 13.0, *)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@available(iOS 13.0, *)
+public enum APIEnv : Swift.String {
+  case staging
+  case prod
+  public init?(rawValue: Swift.String)
+  @available(iOS 13.0, *)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13.0, *)
+public struct DojoTapToPayOniPhoneReceiptMetaData {
+  public let transactionId: Swift.String?
+  public let amount: Swift.UInt64?
+  public let transactionType: Swift.String?
+  public let pan: Swift.String?
+  public let cardScheme: Swift.String?
+  public let authCode: Swift.String?
+  public let cardType: Swift.String?
+  public let terminalId: Swift.String?
+  public let timestamp: Swift.String?
+  public init(transactionId: Swift.String?, amount: Swift.UInt64?, transactionType: Swift.String?, pan: Swift.String?, cardScheme: Swift.String?, authCode: Swift.String?, cardType: Swift.String?, terminalId: Swift.String?, timestamp: Swift.String?)
+}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoTerminalStatus : Swift.RawRepresentable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.Equatable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.Hashable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.Status : Swift.RawRepresentable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Equatable {}
+@available(iOS 16.7, *)
+extension DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult.DeclineReason : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.RawRepresentable {}
