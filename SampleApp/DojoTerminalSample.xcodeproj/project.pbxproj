@@ -319,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dojo.DojoTerminalSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tapple SDK Dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TappleSDJ;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +359,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.dojo.DojoTerminalSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Tapple SDK Dev";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TappleSDJ;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -394,8 +394,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dojo-engineering/dojo-tap-to-pay-on-iphone-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.23;
+				kind = exactVersion;
+				version = 0.0.23;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
