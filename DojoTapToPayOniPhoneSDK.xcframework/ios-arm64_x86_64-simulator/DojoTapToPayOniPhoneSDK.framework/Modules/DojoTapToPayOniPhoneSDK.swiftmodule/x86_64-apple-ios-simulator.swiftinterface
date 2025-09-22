@@ -27,6 +27,14 @@ public enum DojoTerminalStatus : Swift.String, Swift.Decodable {
     get
   }
 }
+@available(iOS 13.0, *)
+public struct TerminalSessionResponse : Swift.Decodable {
+  public let pspToken: Swift.String
+  public let agToken: Swift.String
+  public let currencyCode: Swift.String
+  public let countryCode: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
+}
 @available(iOS 16.7, *)
 public class DojoTapToPayOniPhone {
   public init(env: DojoTapToPayOniPhoneSDK.APIEnv = .prod)
@@ -35,8 +43,9 @@ public class DojoTapToPayOniPhone {
   public func linkAccount(_ secret: Swift.String) async throws
   public func deactiveTerminal()
   public func getTerminalActivationStatus(notifyWhenOperational: Swift.Bool = false, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
+  public func getTerminalSession(auth: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.TerminalSessionResponse
   public func getTerminalStatus(secret: Swift.String, terminalId: Swift.String, fingerprint: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTerminalStatus
-  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
+  public func startPayment(paymentIntentId: Swift.String, secret: Swift.String, isRefund: Swift.Bool) async throws -> DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhonePaymentResult
   public func sendReceipt(paymentIntentId: Swift.String, secret: Swift.String, emails: [Swift.String], metaData: DojoTapToPayOniPhoneSDK.DojoTapToPayOniPhoneReceiptMetaData) async throws
   public func setLocation(_ locationId: Swift.String)
   public func getFingerprint() -> Swift.String?
@@ -98,6 +107,7 @@ public enum DojoSDKErrorCode : Swift.Int {
   case networkError
   case secretNotProvided
   case secretExpired
+  case currencyMismatch
   case paymentIntentNotProvided
   case emailsNotProvided
   case receiptsError
@@ -112,6 +122,29 @@ public enum DojoSDKErrorCode : Swift.Int {
   public var rawValue: Swift.Int {
     get
   }
+}
+@available(iOS 13.0, *)
+public enum NetworkingRequestType : Swift.String {
+  case GET
+  case POST
+  public init?(rawValue: Swift.String)
+  @available(iOS 13.0, *)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13.0, *)
+public protocol NetworkingServiceProtocol {
+  func performDojoRequest<T>(_ requestType: DojoTapToPayOniPhoneSDK.NetworkingRequestType, url: Foundation.URL, auth: Swift.String?, data: Foundation.Data?) async throws -> T where T : Swift.Decodable
+  func performAGRequest<T>(_ requestType: DojoTapToPayOniPhoneSDK.NetworkingRequestType, url: Foundation.URL, auth: Swift.String, data: Foundation.Data?, fingerprint: Swift.String, mid: Swift.String) async throws -> T where T : Swift.Decodable
+}
+@available(iOS 13.0, *)
+public class NetworkingService : DojoTapToPayOniPhoneSDK.NetworkingServiceProtocol {
+  required public init(timeout: Foundation.TimeInterval = 80)
+  public func performDojoRequest<T>(_ requestType: DojoTapToPayOniPhoneSDK.NetworkingRequestType, url: Foundation.URL, auth: Swift.String?, data: Foundation.Data?) async throws -> T where T : Swift.Decodable
+  public func performAGRequest<T>(_ requestType: DojoTapToPayOniPhoneSDK.NetworkingRequestType, url: Foundation.URL, auth: Swift.String, data: Foundation.Data?, fingerprint: Swift.String, mid: Swift.String) async throws -> T where T : Swift.Decodable
+  @objc deinit
 }
 @available(iOS 13.0, *)
 public enum APIEnv : Swift.String {
@@ -159,6 +192,12 @@ extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Equatable {}
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.Hashable {}
 @available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.DojoSDKErrorCode : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.NetworkingRequestType : Swift.Equatable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.NetworkingRequestType : Swift.Hashable {}
+@available(iOS 13.0, *)
+extension DojoTapToPayOniPhoneSDK.NetworkingRequestType : Swift.RawRepresentable {}
 @available(iOS 13.0, *)
 extension DojoTapToPayOniPhoneSDK.APIEnv : Swift.Equatable {}
 @available(iOS 13.0, *)
