@@ -87,7 +87,7 @@ struct ContentView: View {
                             try await dojoSDK?.linkAccount(secret)
                         }
                         
-                        let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret)
+                        let result = try await dojoSDK?.startPayment(paymentIntentId: paymentIntentId, secret: secret, isRefund: false)
                         paymentResult = result
                         if result?.status == .decline && result?.data?.declineReason == .onlinePinError {
                             print("Online Pin error")
